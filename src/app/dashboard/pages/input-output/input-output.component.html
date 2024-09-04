@@ -1,0 +1,11 @@
+<h1 class="text-3xl font-bold">Products list</h1>
+<hr class="my-3">
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+  @for (product of products(); track product.id) {
+  <app-product-card
+    [product]="product"
+    (onIncrementQuantity)="updateProductQuantity(product, $event)"
+  />
+  }
+</div>
