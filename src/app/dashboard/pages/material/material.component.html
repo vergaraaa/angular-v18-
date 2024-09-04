@@ -1,2 +1,17 @@
 <h1 class="mat-title-large font-bold">Material Component</h1>
 <hr class="my-3">
+
+<div class="grid grid-cols-1 sm:grid-cols-3">
+  <p><mat-slide-toggle></mat-slide-toggle></p>
+
+  <mat-icon
+    matBadge="15"
+    aria-hidden="false"
+  >home</mat-icon>
+
+  <button
+    mat-raised-button
+    color="primary"
+    (click)="openBottomSheet()"
+  >Bottom Sheet</button>
+</div>
